@@ -1,0 +1,5 @@
+digraph g {
+ lable = " aba "
+ "3\n3" ->"2\n1\n b" [color=red]
+ "3\n3" ->"1\n2\n a" [color=blue]
+}

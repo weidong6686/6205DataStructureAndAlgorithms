@@ -1,0 +1,652 @@
+SlistMergeSort.java
+------------START---------------------
+a = 
+---------SORT1 Start------------
+# n =      0
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+Zero elements in array
+---------SORT1 End---------------
+a =  15
+---------SORT1 Start------------
+15->NIL
+# n =      1
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  0.0
+# n*n    =  1
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =  15   5
+---------SORT1 Start------------
+before partition a = 15->5->NIL
+after partition a = 15->NIL
+after partition b = 5->NIL
+after merge = 5->15->NIL
+5->15->NIL
+# n =      2
+# num compare(C)     =  1
+# num swap(S)     =  1
+# C+S     =  2
+T(n)=(C+S)/(n)= 1.0(n)
+# nlogn    =  2.0
+T(n)=(C+S)/(nlogn)= 1.0(n*logn)
+# n*n    =  4
+T(n)=(C+S)/(n^2)= 0.5(n^2)
+---------SORT1 End---------------
+a =  15   5  64   8  12  11   4  35
+---------SORT1 Start------------
+before partition a = 15->5->64->8->12->11->4->35->NIL
+after partition a = 15->5->64->8->NIL
+after partition b = 12->11->4->35->NIL
+before partition a = 15->5->64->8->NIL
+after partition a = 15->5->NIL
+after partition b = 64->8->NIL
+before partition a = 15->5->NIL
+after partition a = 15->NIL
+after partition b = 5->NIL
+after merge = 5->15->NIL
+before partition a = 64->8->NIL
+after partition a = 64->NIL
+after partition b = 8->NIL
+after merge = 8->64->NIL
+after merge = 5->8->15->64->NIL
+before partition a = 12->11->4->35->NIL
+after partition a = 12->11->NIL
+after partition b = 4->35->NIL
+before partition a = 12->11->NIL
+after partition a = 12->NIL
+after partition b = 11->NIL
+after merge = 11->12->NIL
+before partition a = 4->35->NIL
+after partition a = 4->NIL
+after partition b = 35->NIL
+after merge = 4->35->NIL
+after merge = 4->11->12->35->NIL
+after merge = 4->5->8->11->12->15->35->64->NIL
+4->5->8->11->12->15->35->64->NIL
+# n =      8
+# num compare(C)     =  17
+# num swap(S)     =  17
+# C+S     =  34
+T(n)=(C+S)/(n)= 4.25(n)
+# nlogn    =  24.0
+T(n)=(C+S)/(nlogn)= 1.4166666666666667(n*logn)
+# n*n    =  64
+T(n)=(C+S)/(n^2)= 0.53125(n^2)
+---------SORT1 End---------------
+a =   6   5   4   3   2   1
+---------SORT1 Start------------
+before partition a = 6->5->4->3->2->1->NIL
+after partition a = 6->5->4->NIL
+after partition b = 3->2->1->NIL
+before partition a = 6->5->4->NIL
+after partition a = 6->5->NIL
+after partition b = 4->NIL
+before partition a = 6->5->NIL
+after partition a = 6->NIL
+after partition b = 5->NIL
+after merge = 5->6->NIL
+after merge = 4->5->6->NIL
+before partition a = 3->2->1->NIL
+after partition a = 3->2->NIL
+after partition b = 1->NIL
+before partition a = 3->2->NIL
+after partition a = 3->NIL
+after partition b = 2->NIL
+after merge = 2->3->NIL
+after merge = 1->2->3->NIL
+after merge = 1->2->3->4->5->6->NIL
+1->2->3->4->5->6->NIL
+# n =      6
+# num compare(C)     =  7
+# num swap(S)     =  7
+# C+S     =  14
+T(n)=(C+S)/(n)= 2.3333333333333335(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 0.9026565502139304(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.3888888888888889(n^2)
+---------SORT1 End---------------
+a =   1   2   3   4   5   6
+---------SORT1 Start------------
+before partition a = 1->2->3->4->5->6->NIL
+after partition a = 1->2->3->NIL
+after partition b = 4->5->6->NIL
+before partition a = 1->2->3->NIL
+after partition a = 1->2->NIL
+after partition b = 3->NIL
+before partition a = 1->2->NIL
+after partition a = 1->NIL
+after partition b = 2->NIL
+after merge = 1->2->NIL
+after merge = 1->2->3->NIL
+before partition a = 4->5->6->NIL
+after partition a = 4->5->NIL
+after partition b = 6->NIL
+before partition a = 4->5->NIL
+after partition a = 4->NIL
+after partition b = 5->NIL
+after merge = 4->5->NIL
+after merge = 4->5->6->NIL
+after merge = 1->2->3->4->5->6->NIL
+1->2->3->4->5->6->NIL
+# n =      6
+# num compare(C)     =  9
+# num swap(S)     =  9
+# C+S     =  18
+T(n)=(C+S)/(n)= 3.0(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 1.1605584217036249(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.5(n^2)
+---------SORT1 End---------------
+a =   1   1   1   1   1   1
+---------SORT1 Start------------
+before partition a = 1->1->1->1->1->1->NIL
+after partition a = 1->1->1->NIL
+after partition b = 1->1->1->NIL
+before partition a = 1->1->1->NIL
+after partition a = 1->1->NIL
+after partition b = 1->NIL
+before partition a = 1->1->NIL
+after partition a = 1->NIL
+after partition b = 1->NIL
+after merge = 1->1->NIL
+after merge = 1->1->1->NIL
+before partition a = 1->1->1->NIL
+after partition a = 1->1->NIL
+after partition b = 1->NIL
+before partition a = 1->1->NIL
+after partition a = 1->NIL
+after partition b = 1->NIL
+after merge = 1->1->NIL
+after merge = 1->1->1->NIL
+after merge = 1->1->1->1->1->1->NIL
+1->1->1->1->1->1->NIL
+# n =      6
+# num compare(C)     =  9
+# num swap(S)     =  9
+# C+S     =  18
+T(n)=(C+S)/(n)= 3.0(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 1.1605584217036249(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.5(n^2)
+---------SORT1 End---------------
+a =   3   1   4   1   5   9   2   6   5   3   5   8   9   7   9   3
+---------SORT1 Start------------
+before partition a = 3->1->4->1->5->9->2->6->5->3->5->8->9->7->9->3->NIL
+after partition a = 3->1->4->1->5->9->2->6->NIL
+after partition b = 5->3->5->8->9->7->9->3->NIL
+before partition a = 3->1->4->1->5->9->2->6->NIL
+after partition a = 3->1->4->1->NIL
+after partition b = 5->9->2->6->NIL
+before partition a = 3->1->4->1->NIL
+after partition a = 3->1->NIL
+after partition b = 4->1->NIL
+before partition a = 3->1->NIL
+after partition a = 3->NIL
+after partition b = 1->NIL
+after merge = 1->3->NIL
+before partition a = 4->1->NIL
+after partition a = 4->NIL
+after partition b = 1->NIL
+after merge = 1->4->NIL
+after merge = 1->1->3->4->NIL
+before partition a = 5->9->2->6->NIL
+after partition a = 5->9->NIL
+after partition b = 2->6->NIL
+before partition a = 5->9->NIL
+after partition a = 5->NIL
+after partition b = 9->NIL
+after merge = 5->9->NIL
+before partition a = 2->6->NIL
+after partition a = 2->NIL
+after partition b = 6->NIL
+after merge = 2->6->NIL
+after merge = 2->5->6->9->NIL
+after merge = 1->1->2->3->4->5->6->9->NIL
+before partition a = 5->3->5->8->9->7->9->3->NIL
+after partition a = 5->3->5->8->NIL
+after partition b = 9->7->9->3->NIL
+before partition a = 5->3->5->8->NIL
+after partition a = 5->3->NIL
+after partition b = 5->8->NIL
+before partition a = 5->3->NIL
+after partition a = 5->NIL
+after partition b = 3->NIL
+after merge = 3->5->NIL
+before partition a = 5->8->NIL
+after partition a = 5->NIL
+after partition b = 8->NIL
+after merge = 5->8->NIL
+after merge = 3->5->5->8->NIL
+before partition a = 9->7->9->3->NIL
+after partition a = 9->7->NIL
+after partition b = 9->3->NIL
+before partition a = 9->7->NIL
+after partition a = 9->NIL
+after partition b = 7->NIL
+after merge = 7->9->NIL
+before partition a = 9->3->NIL
+after partition a = 9->NIL
+after partition b = 3->NIL
+after merge = 3->9->NIL
+after merge = 3->7->9->9->NIL
+after merge = 3->3->5->5->7->8->9->9->NIL
+after merge = 1->1->2->3->3->3->4->5->5->5->6->7->8->9->9->9->NIL
+1->1->2->3->3->3->4->5->5->5->6->7->8->9->9->9->NIL
+# n =      16
+# num compare(C)     =  44
+# num swap(S)     =  44
+# C+S     =  88
+T(n)=(C+S)/(n)= 5.5(n)
+# nlogn    =  64.0
+T(n)=(C+S)/(nlogn)= 1.375(n*logn)
+# n*n    =  256
+T(n)=(C+S)/(n^2)= 0.34375(n^2)
+---------SORT1 End---------------
+a = 
+---------SORT1 Start------------
+# n =      0
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+Zero elements in array
+---------SORT1 End---------------
+a =  15
+---------SORT1 Start------------
+15->NIL
+# n =      1
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  0.0
+# n*n    =  1
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =  15   5
+---------SORT1 Start------------
+before partition a = 15->5->NIL
+after partition a = 15->NIL
+after partition b = 5->NIL
+after merge = 5->15->NIL
+15->5->NIL
+# n =      2
+# num compare(C)     =  1
+# num swap(S)     =  1
+# C+S     =  2
+T(n)=(C+S)/(n)= 1.0(n)
+# nlogn    =  2.0
+T(n)=(C+S)/(nlogn)= 1.0(n*logn)
+# n*n    =  4
+T(n)=(C+S)/(n^2)= 0.5(n^2)
+---------SORT1 End---------------
+a =  15   5  64   8  12  11   4  35
+---------SORT1 Start------------
+before partition a = 15->5->64->8->12->11->4->35->NIL
+after partition a = 15->5->64->8->NIL
+after partition b = 12->11->4->35->NIL
+before partition a = 15->5->64->8->NIL
+after partition a = 15->5->NIL
+after partition b = 64->8->NIL
+before partition a = 15->5->NIL
+after partition a = 15->NIL
+after partition b = 5->NIL
+after merge = 5->15->NIL
+before partition a = 64->8->NIL
+after partition a = 64->NIL
+after partition b = 8->NIL
+after merge = 8->64->NIL
+after merge = 5->8->15->64->NIL
+before partition a = 12->11->4->35->NIL
+after partition a = 12->11->NIL
+after partition b = 4->35->NIL
+before partition a = 12->11->NIL
+after partition a = 12->NIL
+after partition b = 11->NIL
+after merge = 11->12->NIL
+before partition a = 4->35->NIL
+after partition a = 4->NIL
+after partition b = 35->NIL
+after merge = 4->35->NIL
+after merge = 4->11->12->35->NIL
+after merge = 4->5->8->11->12->15->35->64->NIL
+64->35->15->12->11->8->5->4->NIL
+# n =      8
+# num compare(C)     =  17
+# num swap(S)     =  17
+# C+S     =  34
+T(n)=(C+S)/(n)= 4.25(n)
+# nlogn    =  24.0
+T(n)=(C+S)/(nlogn)= 1.4166666666666667(n*logn)
+# n*n    =  64
+T(n)=(C+S)/(n^2)= 0.53125(n^2)
+---------SORT1 End---------------
+a =   6   5   4   3   2   1
+---------SORT1 Start------------
+before partition a = 6->5->4->3->2->1->NIL
+after partition a = 6->5->4->NIL
+after partition b = 3->2->1->NIL
+before partition a = 6->5->4->NIL
+after partition a = 6->5->NIL
+after partition b = 4->NIL
+before partition a = 6->5->NIL
+after partition a = 6->NIL
+after partition b = 5->NIL
+after merge = 5->6->NIL
+after merge = 4->5->6->NIL
+before partition a = 3->2->1->NIL
+after partition a = 3->2->NIL
+after partition b = 1->NIL
+before partition a = 3->2->NIL
+after partition a = 3->NIL
+after partition b = 2->NIL
+after merge = 2->3->NIL
+after merge = 1->2->3->NIL
+after merge = 1->2->3->4->5->6->NIL
+6->5->4->3->2->1->NIL
+# n =      6
+# num compare(C)     =  7
+# num swap(S)     =  7
+# C+S     =  14
+T(n)=(C+S)/(n)= 2.3333333333333335(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 0.9026565502139304(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.3888888888888889(n^2)
+---------SORT1 End---------------
+a =   1   2   3   4   5   6
+---------SORT1 Start------------
+before partition a = 1->2->3->4->5->6->NIL
+after partition a = 1->2->3->NIL
+after partition b = 4->5->6->NIL
+before partition a = 1->2->3->NIL
+after partition a = 1->2->NIL
+after partition b = 3->NIL
+before partition a = 1->2->NIL
+after partition a = 1->NIL
+after partition b = 2->NIL
+after merge = 1->2->NIL
+after merge = 1->2->3->NIL
+before partition a = 4->5->6->NIL
+after partition a = 4->5->NIL
+after partition b = 6->NIL
+before partition a = 4->5->NIL
+after partition a = 4->NIL
+after partition b = 5->NIL
+after merge = 4->5->NIL
+after merge = 4->5->6->NIL
+after merge = 1->2->3->4->5->6->NIL
+6->5->4->3->2->1->NIL
+# n =      6
+# num compare(C)     =  9
+# num swap(S)     =  9
+# C+S     =  18
+T(n)=(C+S)/(n)= 3.0(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 1.1605584217036249(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.5(n^2)
+---------SORT1 End---------------
+a =   1   1   1   1   1   1
+---------SORT1 Start------------
+before partition a = 1->1->1->1->1->1->NIL
+after partition a = 1->1->1->NIL
+after partition b = 1->1->1->NIL
+before partition a = 1->1->1->NIL
+after partition a = 1->1->NIL
+after partition b = 1->NIL
+before partition a = 1->1->NIL
+after partition a = 1->NIL
+after partition b = 1->NIL
+after merge = 1->1->NIL
+after merge = 1->1->1->NIL
+before partition a = 1->1->1->NIL
+after partition a = 1->1->NIL
+after partition b = 1->NIL
+before partition a = 1->1->NIL
+after partition a = 1->NIL
+after partition b = 1->NIL
+after merge = 1->1->NIL
+after merge = 1->1->1->NIL
+after merge = 1->1->1->1->1->1->NIL
+1->1->1->1->1->1->NIL
+# n =      6
+# num compare(C)     =  9
+# num swap(S)     =  9
+# C+S     =  18
+T(n)=(C+S)/(n)= 3.0(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 1.1605584217036249(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.5(n^2)
+---------SORT1 End---------------
+a =   3   1   4   1   5   9   2   6   5   3   5   8   9   7   9   3
+---------SORT1 Start------------
+before partition a = 3->1->4->1->5->9->2->6->5->3->5->8->9->7->9->3->NIL
+after partition a = 3->1->4->1->5->9->2->6->NIL
+after partition b = 5->3->5->8->9->7->9->3->NIL
+before partition a = 3->1->4->1->5->9->2->6->NIL
+after partition a = 3->1->4->1->NIL
+after partition b = 5->9->2->6->NIL
+before partition a = 3->1->4->1->NIL
+after partition a = 3->1->NIL
+after partition b = 4->1->NIL
+before partition a = 3->1->NIL
+after partition a = 3->NIL
+after partition b = 1->NIL
+after merge = 1->3->NIL
+before partition a = 4->1->NIL
+after partition a = 4->NIL
+after partition b = 1->NIL
+after merge = 1->4->NIL
+after merge = 1->1->3->4->NIL
+before partition a = 5->9->2->6->NIL
+after partition a = 5->9->NIL
+after partition b = 2->6->NIL
+before partition a = 5->9->NIL
+after partition a = 5->NIL
+after partition b = 9->NIL
+after merge = 5->9->NIL
+before partition a = 2->6->NIL
+after partition a = 2->NIL
+after partition b = 6->NIL
+after merge = 2->6->NIL
+after merge = 2->5->6->9->NIL
+after merge = 1->1->2->3->4->5->6->9->NIL
+before partition a = 5->3->5->8->9->7->9->3->NIL
+after partition a = 5->3->5->8->NIL
+after partition b = 9->7->9->3->NIL
+before partition a = 5->3->5->8->NIL
+after partition a = 5->3->NIL
+after partition b = 5->8->NIL
+before partition a = 5->3->NIL
+after partition a = 5->NIL
+after partition b = 3->NIL
+after merge = 3->5->NIL
+before partition a = 5->8->NIL
+after partition a = 5->NIL
+after partition b = 8->NIL
+after merge = 5->8->NIL
+after merge = 3->5->5->8->NIL
+before partition a = 9->7->9->3->NIL
+after partition a = 9->7->NIL
+after partition b = 9->3->NIL
+before partition a = 9->7->NIL
+after partition a = 9->NIL
+after partition b = 7->NIL
+after merge = 7->9->NIL
+before partition a = 9->3->NIL
+after partition a = 9->NIL
+after partition b = 3->NIL
+after merge = 3->9->NIL
+after merge = 3->7->9->9->NIL
+after merge = 3->3->5->5->7->8->9->9->NIL
+after merge = 1->1->2->3->3->3->4->5->5->5->6->7->8->9->9->9->NIL
+9->9->9->8->7->6->5->5->5->4->3->3->3->2->1->1->NIL
+# n =      16
+# num compare(C)     =  44
+# num swap(S)     =  44
+# C+S     =  88
+T(n)=(C+S)/(n)= 5.5(n)
+# nlogn    =  64.0
+T(n)=(C+S)/(nlogn)= 1.375(n*logn)
+# n*n    =  256
+T(n)=(C+S)/(n^2)= 0.34375(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      10000
+# num compare(C)     =  120274
+# num swap(S)     =  120274
+# C+S     =  240548
+T(n)=(C+S)/(n)= 24.0548(n)
+# nlogn    =  132877.1237954945
+T(n)=(C+S)/(nlogn)= 1.8103040849244838(n*logn)
+# n*n    =  100000000
+T(n)=(C+S)/(n^2)= 0.00240548(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      20000
+# num compare(C)     =  260843
+# num swap(S)     =  260843
+# C+S     =  521686
+T(n)=(C+S)/(n)= 26.0843(n)
+# nlogn    =  285754.247590989
+T(n)=(C+S)/(nlogn)= 1.8256456532072594(n*logn)
+# n*n    =  400000000
+T(n)=(C+S)/(n^2)= 0.001304215(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      30000
+# num compare(C)     =  408586
+# num swap(S)     =  408586
+# C+S     =  817172
+T(n)=(C+S)/(n)= 27.239066666666666(n)
+# nlogn    =  446180.2464081182
+T(n)=(C+S)/(nlogn)= 1.831484039417868(n*logn)
+# n*n    =  900000000
+T(n)=(C+S)/(n^2)= 9.079688888888889E-4(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      40000
+# num compare(C)     =  561858
+# num swap(S)     =  561858
+# C+S     =  1123716
+T(n)=(C+S)/(n)= 28.0929(n)
+# nlogn    =  611508.495181978
+T(n)=(C+S)/(nlogn)= 1.8376130648284696(n*logn)
+# n*n    =  1600000000
+T(n)=(C+S)/(n^2)= 7.023225E-4(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      10001
+# num compare(C)     =  120511
+# num swap(S)     =  120511
+# C+S     =  241022
+T(n)=(C+S)/(n)= 24.0997900209979(n)
+# nlogn    =  132891.85427504728
+T(n)=(C+S)/(nlogn)= 1.8136702306911523(n*logn)
+# n*n    =  100020001
+T(n)=(C+S)/(n^2)= 0.0024097380282969605(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      20001
+# num compare(C)     =  260851
+# num swap(S)     =  260851
+# C+S     =  521702
+T(n)=(C+S)/(n)= 26.08379581020949(n)
+# nlogn    =  285769.9780344762
+T(n)=(C+S)/(nlogn)= 1.8256011481271142(n*logn)
+# n*n    =  400040001
+T(n)=(C+S)/(n^2)= 0.0013041245842812603(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      30001
+# num compare(C)     =  408797
+# num swap(S)     =  408797
+# C+S     =  817594
+T(n)=(C+S)/(n)= 27.252224925835804(n)
+# nlogn    =  446196.561802084
+T(n)=(C+S)/(nlogn)= 1.832362841833492(n*logn)
+# n*n    =  900060001
+T(n)=(C+S)/(n^2)= 9.083772182872506E-4(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      40001
+# num compare(C)     =  561720
+# num swap(S)     =  561720
+# C+S     =  1123440
+T(n)=(C+S)/(n)= 28.08529786755331(n)
+# nlogn    =  611525.225607432
+T(n)=(C+S)/(nlogn)= 1.8371114599305038(n*logn)
+# n*n    =  1600080001
+T(n)=(C+S)/(n^2)= 7.021148938164874E-4(n^2)
+---------SORT1 End---------------
+------------testing  5001 SORTED ASCENDING numbers----------
+---------SORT1 Start------------
+# n =      5001
+# num compare(C)     =  32013
+# num swap(S)     =  32013
+# C+S     =  64026
+T(n)=(C+S)/(n)= 12.802639472105579(n)
+# nlogn    =  61452.29244942758
+T(n)=(C+S)/(nlogn)= 1.041881392019516(n*logn)
+# n*n    =  25010001
+T(n)=(C+S)/(n^2)= 0.0025600158912428674(n^2)
+---------SORT1 End---------------
+------------testing  10001 SORTED ASCENDING numbers----------
+---------SORT1 Start------------
+# n =      10001
+# num compare(C)     =  69018
+# num swap(S)     =  69018
+# C+S     =  138036
+T(n)=(C+S)/(n)= 13.802219778022197(n)
+# nlogn    =  132891.85427504728
+T(n)=(C+S)/(nlogn)= 1.0387092629041494(n*logn)
+# n*n    =  100020001
+T(n)=(C+S)/(n^2)= 0.0013800839694052792(n^2)
+---------SORT1 End---------------
+------------testing  15001 SORTED ASCENDING numbers----------
+---------SORT1 Start------------
+# n =      15001
+# num compare(C)     =  106372
+# num swap(S)     =  106372
+# C+S     =  212744
+T(n)=(C+S)/(n)= 14.181987867475502(n)
+# nlogn    =  208105.43862206902
+T(n)=(C+S)/(nlogn)= 1.0222894769528579(n*logn)
+# n*n    =  225030001
+T(n)=(C+S)/(n^2)= 9.454028309763017E-4(n^2)
+---------SORT1 End---------------
+------------testing  20001 SORTED ASCENDING numbers----------
+---------SORT1 Start------------
+# n =      20001
+# num compare(C)     =  148027
+# num swap(S)     =  148027
+# C+S     =  296054
+T(n)=(C+S)/(n)= 14.8019599020049(n)
+# nlogn    =  285769.9780344762
+T(n)=(C+S)/(nlogn)= 1.0359870621688716(n*logn)
+# n*n    =  400040001
+T(n)=(C+S)/(n^2)= 7.400609920506424E-4(n^2)
+---------SORT1 End---------------
+------------testing  25001 SORTED ASCENDING numbers----------
+---------SORT1 Start------------
+# n =      25001
+# num compare(C)     =  188486
+# num swap(S)     =  188486
+# C+S     =  376972
+T(n)=(C+S)/(n)= 15.078276868925244(n)
+# nlogn    =  365257.06422528916
+T(n)=(C+S)/(nlogn)= 1.0320731258122502(n*logn)
+# n*n    =  625050001
+T(n)=(C+S)/(n^2)= 6.031069504789906E-4(n^2)
+---------SORT1 End---------------
+------------DONE!--------
+SlistMergeSort.java DONE

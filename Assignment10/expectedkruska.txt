@@ -1,0 +1,253 @@
+Kruskal problem STARTS
+-------------------- uw1.txt  MST OF 63 -------------------------------------
+-------- Before Sort ---------------
+1 8 10.0
+1 2 3.0
+2 3 26.0
+2 5 12.0
+3 4 14.0
+3 6 13.0
+3 5 17.0
+4 9 11.0
+4 6 9.0
+4 7 16.0
+5 6 15.0
+5 8 7.0
+6 7 6.0
+6 8 8.0
+7 8 4.0
+-------- After Sort ---------------
+1 2 3.0
+7 8 4.0
+6 7 6.0
+5 8 7.0
+6 8 8.0
+4 6 9.0
+1 8 10.0
+4 9 11.0
+2 5 12.0
+3 6 13.0
+3 4 14.0
+5 6 15.0
+4 7 16.0
+3 5 17.0
+2 3 26.0
+1 -> 2 3.0  Total cost 3.0
+7 -> 8 4.0  Total cost 7.0
+6 -> 7 6.0  Total cost 13.0
+5 -> 8 7.0  Total cost 20.0
+6 -> 8 creates a loop
+4 -> 6 9.0  Total cost 29.0
+1 -> 8 10.0  Total cost 39.0
+4 -> 9 11.0  Total cost 50.0
+2 -> 5 creates a loop
+3 -> 6 13.0  Total cost 63.0
+3 -> 4 creates a loop
+5 -> 6 creates a loop
+4 -> 7 creates a loop
+3 -> 5 creates a loop
+2 -> 3 creates a loop
+Num cities     = 9
+Num Road built    = 8
+MST COST    = 63.0
+n = 9
+U = 8 F = 42 H = 2
+-------------------- uw2.txt  MST OF 93 -------------------------------------
+-------- Before Sort ---------------
+1 2 16.0
+1 3 12.0
+1 4 21.0
+2 1 16.0
+2 4 17.0
+2 5 20.0
+3 1 12.0
+3 4 28.0
+3 6 31.0
+4 1 21.0
+4 2 17.0
+4 3 28.0
+4 5 18.0
+4 6 19.0
+4 7 23.0
+5 2 20.0
+5 4 18.0
+5 7 11.0
+6 3 31.0
+6 4 19.0
+6 7 27.0
+7 4 23.0
+7 5 11.0
+7 6 27.0
+-------- After Sort ---------------
+5 7 11.0
+7 5 11.0
+1 3 12.0
+3 1 12.0
+1 2 16.0
+2 1 16.0
+2 4 17.0
+4 2 17.0
+4 5 18.0
+5 4 18.0
+4 6 19.0
+6 4 19.0
+2 5 20.0
+5 2 20.0
+1 4 21.0
+4 1 21.0
+4 7 23.0
+7 4 23.0
+6 7 27.0
+7 6 27.0
+3 4 28.0
+4 3 28.0
+3 6 31.0
+6 3 31.0
+5 -> 7 11.0  Total cost 11.0
+7 -> 5 creates a loop
+1 -> 3 12.0  Total cost 23.0
+3 -> 1 creates a loop
+1 -> 2 16.0  Total cost 39.0
+2 -> 1 creates a loop
+2 -> 4 17.0  Total cost 56.0
+4 -> 2 creates a loop
+4 -> 5 18.0  Total cost 74.0
+5 -> 4 creates a loop
+4 -> 6 19.0  Total cost 93.0
+6 -> 4 creates a loop
+2 -> 5 creates a loop
+5 -> 2 creates a loop
+1 -> 4 creates a loop
+4 -> 1 creates a loop
+4 -> 7 creates a loop
+7 -> 4 creates a loop
+6 -> 7 creates a loop
+7 -> 6 creates a loop
+3 -> 4 creates a loop
+4 -> 3 creates a loop
+3 -> 6 creates a loop
+6 -> 3 creates a loop
+Num cities     = 7
+Num Road built    = 6
+MST COST    = 93.0
+n = 7
+U = 6 F = 72 H = 2
+-------------------- tinyEWD.txt  MST OF 2.4699999999999998 -------------------------------------
+-------- Before Sort ---------------
+4 5 0.35
+5 4 0.35
+4 7 0.37
+5 7 0.28
+7 5 0.28
+5 1 0.32
+0 4 0.38
+0 2 0.26
+7 3 0.39
+1 3 0.29
+2 7 0.34
+6 2 0.4
+3 6 0.52
+6 0 0.58
+6 4 0.93
+-------- After Sort ---------------
+0 2 0.26
+5 7 0.28
+7 5 0.28
+1 3 0.29
+5 1 0.32
+2 7 0.34
+4 5 0.35
+5 4 0.35
+4 7 0.37
+0 4 0.38
+7 3 0.39
+6 2 0.4
+3 6 0.52
+6 0 0.58
+6 4 0.93
+0 -> 2 0.26  Total cost 0.26
+5 -> 7 0.28  Total cost 0.54
+7 -> 5 creates a loop
+1 -> 3 0.29  Total cost 0.8300000000000001
+5 -> 1 0.32  Total cost 1.1500000000000001
+2 -> 7 0.34  Total cost 1.4900000000000002
+4 -> 5 0.35  Total cost 1.8400000000000003
+5 -> 4 creates a loop
+4 -> 7 creates a loop
+0 -> 4 creates a loop
+7 -> 3 creates a loop
+6 -> 2 0.4  Total cost 2.24
+3 -> 6 creates a loop
+6 -> 0 creates a loop
+6 -> 4 creates a loop
+Num cities     = 8
+Num Road built    = 7
+MST COST    = 2.24
+n = 8
+U = 7 F = 39 H = 2
+-------------------- tinyEWG.txt MST OF 1.81 -------------------------------------
+-------- Before Sort ---------------
+4 5 0.35
+4 7 0.37
+5 7 0.28
+0 7 0.16
+1 5 0.32
+0 4 0.38
+2 3 0.17
+1 7 0.19
+0 2 0.26
+1 2 0.36
+1 3 0.29
+2 7 0.34
+6 2 0.4
+3 6 0.52
+6 0 0.58
+6 4 0.93
+-------- After Sort ---------------
+0 7 0.16
+2 3 0.17
+1 7 0.19
+0 2 0.26
+5 7 0.28
+1 3 0.29
+1 5 0.32
+2 7 0.34
+4 5 0.35
+1 2 0.36
+4 7 0.37
+0 4 0.38
+6 2 0.4
+3 6 0.52
+6 0 0.58
+6 4 0.93
+0 -> 7 0.16  Total cost 0.16
+2 -> 3 0.17  Total cost 0.33
+1 -> 7 0.19  Total cost 0.52
+0 -> 2 0.26  Total cost 0.78
+5 -> 7 0.28  Total cost 1.06
+1 -> 3 creates a loop
+1 -> 5 creates a loop
+2 -> 7 creates a loop
+4 -> 5 0.35  Total cost 1.4100000000000001
+1 -> 2 creates a loop
+4 -> 7 creates a loop
+0 -> 4 creates a loop
+6 -> 2 0.4  Total cost 1.81
+3 -> 6 creates a loop
+6 -> 0 creates a loop
+6 -> 4 creates a loop
+Num cities     = 8
+Num Road built    = 7
+MST COST    = 1.81
+n = 8
+U = 7 F = 45 H = 2
+-------------------- largeEWD MST OF 647.6347342400023 -------------------------------------
+Num cities     = 999900
+Num Road built    = 999899
+MST COST    = 647.6347342400023
+n = 999900
+U = 999899 F = 59230755 H = 6
+Run time for largeEWD MST = 56.33879387 secs
+All tests passed
+If you have enjoyed solving this interview problem write a review for me on linkedln
+Kruskal problem ENDS

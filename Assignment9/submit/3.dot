@@ -1,0 +1,17 @@
+digraph g {
+ lable = " aaabbggggghhhhaaaggggaaaaa_+@# "
+ "15\n30" ->"2\n11\n a" [color=red]
+ "15\n30" ->"14\n19" [color=blue]
+ "14\n19" ->"5\n9\n g" [color=red]
+ "14\n19" ->"13\n10" [color=blue]
+ "13\n10" ->"6\n4\n h" [color=red]
+ "13\n10" ->"12\n6" [color=blue]
+ "12\n6" ->"9\n2" [color=red]
+ "12\n6" ->"11\n4" [color=blue]
+ "9\n2" ->"1\n1\n @" [color=red]
+ "9\n2" ->"4\n1\n #" [color=blue]
+ "11\n4" ->"3\n2\n b" [color=red]
+ "11\n4" ->"10\n2" [color=blue]
+ "10\n2" ->"8\n1\n _" [color=red]
+ "10\n2" ->"7\n1\n +" [color=blue]
+}

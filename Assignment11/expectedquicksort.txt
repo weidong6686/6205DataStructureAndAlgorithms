@@ -1,0 +1,558 @@
+SlistQuickSort.java
+------------START---------------------
+a = 
+---------SORT1 Start------------
+# n =      0
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+Zero elements in array
+---------SORT1 End---------------
+a =  15
+---------SORT1 Start------------
+15->NIL
+# n =      1
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  0.0
+# n*n    =  1
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =  15   5
+---------SORT1 Start------------
+Working on = 15->5->NIL
+l = 5->NIL
+p = 15->NIL
+r = 
+AfterMerge = 5->15->NIL
+5->15->NIL
+# n =      2
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  2.0
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  4
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =  15   5  64   8  12  11   4  35
+---------SORT1 Start------------
+Working on = 15->5->64->8->12->11->4->35->NIL
+l = 5->4->NIL
+p = 8->NIL
+r = 15->64->12->11->35->NIL
+Working on = 5->4->NIL
+l = 4->NIL
+p = 5->NIL
+r = 
+AfterMerge = 4->5->NIL
+Working on = 15->64->12->11->35->NIL
+l = 11->NIL
+p = 12->NIL
+r = 15->64->35->NIL
+Working on = 15->64->35->NIL
+l = 15->35->NIL
+p = 64->NIL
+r = 
+Working on = 15->35->NIL
+l = 
+p = 15->NIL
+r = 35->NIL
+AfterMerge = 15->35->NIL
+AfterMerge = 15->35->64->NIL
+AfterMerge = 11->12->15->35->64->NIL
+AfterMerge = 4->5->8->11->12->15->35->64->NIL
+4->5->8->11->12->15->35->64->NIL
+# n =      8
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  24.0
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  64
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =   6   5   4   3   2   1
+---------SORT1 Start------------
+Working on = 6->5->4->3->2->1->NIL
+l = 3->2->1->NIL
+p = 4->NIL
+r = 6->5->NIL
+Working on = 3->2->1->NIL
+l = 1->NIL
+p = 2->NIL
+r = 3->NIL
+AfterMerge = 1->2->3->NIL
+Working on = 6->5->NIL
+l = 5->NIL
+p = 6->NIL
+r = 
+AfterMerge = 5->6->NIL
+AfterMerge = 1->2->3->4->5->6->NIL
+1->2->3->4->5->6->NIL
+# n =      6
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =   1   2   3   4   5   6
+---------SORT1 Start------------
+Working on = 1->2->3->4->5->6->NIL
+l = 1->2->NIL
+p = 3->NIL
+r = 4->5->6->NIL
+Working on = 1->2->NIL
+l = 
+p = 1->NIL
+r = 2->NIL
+AfterMerge = 1->2->NIL
+Working on = 4->5->6->NIL
+l = 4->NIL
+p = 5->NIL
+r = 6->NIL
+AfterMerge = 4->5->6->NIL
+AfterMerge = 1->2->3->4->5->6->NIL
+1->2->3->4->5->6->NIL
+# n =      6
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =   1   1   1   1   1   1
+---------SORT1 Start------------
+Working on = 1->1->1->1->1->1->NIL
+l = 
+p = 1->1->1->1->1->1->NIL
+r = 
+AfterMerge = 1->1->1->1->1->1->NIL
+1->1->1->1->1->1->NIL
+# n =      6
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =   3   1   4   1   5   9   2   6   5   3   5   8   9   7   9   3
+---------SORT1 Start------------
+Working on = 3->1->4->1->5->9->2->6->5->3->5->8->9->7->9->3->NIL
+l = 3->1->4->1->5->2->5->3->5->3->NIL
+p = 6->NIL
+r = 9->8->9->7->9->NIL
+Working on = 3->1->4->1->5->2->5->3->5->3->NIL
+l = 3->1->4->1->2->3->3->NIL
+p = 5->5->5->NIL
+r = 
+Working on = 3->1->4->1->2->3->3->NIL
+l = 
+p = 1->1->NIL
+r = 3->4->2->3->3->NIL
+Working on = 3->4->2->3->3->NIL
+l = 
+p = 2->NIL
+r = 3->4->3->3->NIL
+Working on = 3->4->3->3->NIL
+l = 3->3->3->NIL
+p = 4->NIL
+r = 
+Working on = 3->3->3->NIL
+l = 
+p = 3->3->3->NIL
+r = 
+AfterMerge = 3->3->3->NIL
+AfterMerge = 3->3->3->4->NIL
+AfterMerge = 2->3->3->3->4->NIL
+AfterMerge = 1->1->2->3->3->3->4->NIL
+AfterMerge = 1->1->2->3->3->3->4->5->5->5->NIL
+Working on = 9->8->9->7->9->NIL
+l = 8->7->NIL
+p = 9->9->9->NIL
+r = 
+Working on = 8->7->NIL
+l = 7->NIL
+p = 8->NIL
+r = 
+AfterMerge = 7->8->NIL
+AfterMerge = 7->8->9->9->9->NIL
+AfterMerge = 1->1->2->3->3->3->4->5->5->5->6->7->8->9->9->9->NIL
+1->1->2->3->3->3->4->5->5->5->6->7->8->9->9->9->NIL
+# n =      16
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  64.0
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  256
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a = 
+---------SORT1 Start------------
+# n =      0
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+Zero elements in array
+---------SORT1 End---------------
+a =  15
+---------SORT1 Start------------
+15->NIL
+# n =      1
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  0.0
+# n*n    =  1
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =  15   5
+---------SORT1 Start------------
+Working on = 15->5->NIL
+l = 5->NIL
+p = 15->NIL
+r = 
+AfterMerge = 5->15->NIL
+15->5->NIL
+# n =      2
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  2.0
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  4
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =  15   5  64   8  12  11   4  35
+---------SORT1 Start------------
+Working on = 15->5->64->8->12->11->4->35->NIL
+l = 5->4->NIL
+p = 8->NIL
+r = 15->64->12->11->35->NIL
+Working on = 5->4->NIL
+l = 4->NIL
+p = 5->NIL
+r = 
+AfterMerge = 4->5->NIL
+Working on = 15->64->12->11->35->NIL
+l = 11->NIL
+p = 12->NIL
+r = 15->64->35->NIL
+Working on = 15->64->35->NIL
+l = 15->35->NIL
+p = 64->NIL
+r = 
+Working on = 15->35->NIL
+l = 
+p = 15->NIL
+r = 35->NIL
+AfterMerge = 15->35->NIL
+AfterMerge = 15->35->64->NIL
+AfterMerge = 11->12->15->35->64->NIL
+AfterMerge = 4->5->8->11->12->15->35->64->NIL
+64->35->15->12->11->8->5->4->NIL
+# n =      8
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  24.0
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  64
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =   6   5   4   3   2   1
+---------SORT1 Start------------
+Working on = 6->5->4->3->2->1->NIL
+l = 3->2->1->NIL
+p = 4->NIL
+r = 6->5->NIL
+Working on = 3->2->1->NIL
+l = 1->NIL
+p = 2->NIL
+r = 3->NIL
+AfterMerge = 1->2->3->NIL
+Working on = 6->5->NIL
+l = 5->NIL
+p = 6->NIL
+r = 
+AfterMerge = 5->6->NIL
+AfterMerge = 1->2->3->4->5->6->NIL
+6->5->4->3->2->1->NIL
+# n =      6
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =   1   2   3   4   5   6
+---------SORT1 Start------------
+Working on = 1->2->3->4->5->6->NIL
+l = 1->2->NIL
+p = 3->NIL
+r = 4->5->6->NIL
+Working on = 1->2->NIL
+l = 
+p = 1->NIL
+r = 2->NIL
+AfterMerge = 1->2->NIL
+Working on = 4->5->6->NIL
+l = 4->NIL
+p = 5->NIL
+r = 6->NIL
+AfterMerge = 4->5->6->NIL
+AfterMerge = 1->2->3->4->5->6->NIL
+6->5->4->3->2->1->NIL
+# n =      6
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =   1   1   1   1   1   1
+---------SORT1 Start------------
+Working on = 1->1->1->1->1->1->NIL
+l = 
+p = 1->1->1->1->1->1->NIL
+r = 
+AfterMerge = 1->1->1->1->1->1->NIL
+1->1->1->1->1->1->NIL
+# n =      6
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  15.509775004326936
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  36
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+a =   3   1   4   1   5   9   2   6   5   3   5   8   9   7   9   3
+---------SORT1 Start------------
+Working on = 3->1->4->1->5->9->2->6->5->3->5->8->9->7->9->3->NIL
+l = 3->1->4->1->5->2->5->3->5->3->NIL
+p = 6->NIL
+r = 9->8->9->7->9->NIL
+Working on = 3->1->4->1->5->2->5->3->5->3->NIL
+l = 3->1->4->1->2->3->3->NIL
+p = 5->5->5->NIL
+r = 
+Working on = 3->1->4->1->2->3->3->NIL
+l = 
+p = 1->1->NIL
+r = 3->4->2->3->3->NIL
+Working on = 3->4->2->3->3->NIL
+l = 
+p = 2->NIL
+r = 3->4->3->3->NIL
+Working on = 3->4->3->3->NIL
+l = 3->3->3->NIL
+p = 4->NIL
+r = 
+Working on = 3->3->3->NIL
+l = 
+p = 3->3->3->NIL
+r = 
+AfterMerge = 3->3->3->NIL
+AfterMerge = 3->3->3->4->NIL
+AfterMerge = 2->3->3->3->4->NIL
+AfterMerge = 1->1->2->3->3->3->4->NIL
+AfterMerge = 1->1->2->3->3->3->4->5->5->5->NIL
+Working on = 9->8->9->7->9->NIL
+l = 8->7->NIL
+p = 9->9->9->NIL
+r = 
+Working on = 8->7->NIL
+l = 7->NIL
+p = 8->NIL
+r = 
+AfterMerge = 7->8->NIL
+AfterMerge = 7->8->9->9->9->NIL
+AfterMerge = 1->1->2->3->3->3->4->5->5->5->6->7->8->9->9->9->NIL
+9->9->9->8->7->6->5->5->5->4->3->3->3->2->1->1->NIL
+# n =      16
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  64.0
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  256
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      10000
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  132877.1237954945
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  100000000
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      20000
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  285754.247590989
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  400000000
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      30000
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  446180.2464081182
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  900000000
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      40000
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  611508.495181978
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  1600000000
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      10001
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  132891.85427504728
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  100020001
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      20001
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  285769.9780344762
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  400040001
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      30001
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  446196.561802084
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  900060001
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+---------SORT1 Start------------
+# n =      40001
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  611525.225607432
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  1600080001
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+------------testing  5001 SORTED ASCENDING numbers----------
+---------SORT1 Start------------
+# n =      5001
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  61452.29244942758
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  25010001
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+------------testing  10001 SORTED ASCENDING numbers----------
+---------SORT1 Start------------
+# n =      10001
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  132891.85427504728
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  100020001
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+------------testing  15001 SORTED ASCENDING numbers----------
+---------SORT1 Start------------
+# n =      15001
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  208105.43862206902
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  225030001
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+------------testing  20001 SORTED ASCENDING numbers----------
+---------SORT1 Start------------
+# n =      20001
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  285769.9780344762
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  400040001
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+------------testing  25001 SORTED ASCENDING numbers----------
+---------SORT1 Start------------
+# n =      25001
+# num compare(C)     =  0
+# num swap(S)     =  0
+# C+S     =  0
+T(n)=(C+S)/(n)= 0.0(n)
+# nlogn    =  365257.06422528916
+T(n)=(C+S)/(nlogn)= 0.0(n*logn)
+# n*n    =  625050001
+T(n)=(C+S)/(n^2)= 0.0(n^2)
+---------SORT1 End---------------
+------------DONE!--------
+SlistQuickSort.java DONE
